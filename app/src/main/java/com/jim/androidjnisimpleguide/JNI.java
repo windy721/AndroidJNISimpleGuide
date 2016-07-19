@@ -10,7 +10,7 @@ import android.widget.Toast;
  */
 public class JNI extends Activity {
     static {
-        System.loadLibrary("XXX"); // TODO - the module name is not yet defined, will be changed later.
+        System.loadLibrary("JniTest"); // TODO - the module name is not yet defined, will be changed later.
     }
 
     public native String getInitStringFromNative();
