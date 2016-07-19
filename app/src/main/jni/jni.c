@@ -5,10 +5,10 @@
 #include "com_jim_androidjnisimpleguide_JNI.h"
 #include <jni.h>
 
-JNIEXPORT jstring JNICALL Java_com_jim_androidjnisimpleguide_JNI_getInitStringFromNative(JNIEnv *, jobject) {
+JNIEXPORT jstring JNICALL Java_com_jim_androidjnisimpleguide_JNI_getInitStringFromNative(JNIEnv * env, jobject obj) {
     return (*env)->NewStringUTF(env,"JNI: Hello From JNI!");
 }
 
-JNIEXPORT jstring JNICALL Java_com_jim_androidjnisimpleguide_JNI_getGreetingFromNative(JNIEnv *, jobject) {
+JNIEXPORT jstring JNICALL Java_com_jim_androidjnisimpleguide_JNI_getGreetingFromNative(JNIEnv * env, jobject obj) {
     return (*env)->NewStringUTF(env, "JNI: Greeting From JNI!");
 }
